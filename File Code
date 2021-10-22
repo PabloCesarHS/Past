@@ -1,0 +1,78 @@
+var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://url");
+httpWebRequest.ContentType = "application/json";
+httpWebRequest.Method = "POST";
+
+using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+{
+    string json = "{\"user\":\"test\"," +
+                  "\"password\":\"bla\"}";
+
+    streamWriter.Write(json);
+}
+
+var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+{
+    var result = streamReader.ReadToEnd();
+}
+
+-----------------------------------------------------------------------------------------------
+var url = "https://reqbin.com/echo/post/json";
+
+var httpRequest = (HttpWebRequest)WebRequest.Create(url);
+httpRequest.Method = "POST";
+
+httpRequest.Accept = "application/json";
+httpRequest.Headers["Authorization"] = "Bearer vklsmnfbklfmsdbmksfbsb";
+httpRequest.ContentType = "application/json";
+
+var data = @"{
+  ""Id"": 78912,
+  ""Customer"": ""Jason Sweet"",
+  ""Quantity"": 1,
+  ""Price"": 18.00
+}";
+
+using (var streamWriter = new StreamWriter(httpRequest.GetRequestStream()))
+{
+   streamWriter.Write(data);
+}
+
+var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+{
+   var result = streamReader.ReadToEnd();
+}
+
+Console.WriteLine(httpResponse.StatusCode);
+-------------------------------------------------------------
+var payload = new Credentials { 
+    Agent = new Agent { 
+        Name = "Agent Name",
+        Version = 1 
+    },
+    Username = "Username",
+    Password = "User Password",
+    Token = "xxxxx"
+};
+
+// Serialize our concrete class into a JSON String
+var stringPayload = JsonConvert.SerializeObject(payload);
+
+// Wrap our JSON inside a StringContent which then can be used by the HttpClient class
+var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
+
+var httpClient = new HttpClient()
+    
+// Do the actual request and await the response
+var httpResponse = await httpClient.PostAsync("http://localhost/api/path", httpContent);
+
+// If the response contains content we want to read it!
+if (httpResponse.Content != null) {
+    var responseContent = await httpResponse.Content.ReadAsStringAsync();
+    
+    // From here on you could deserialize the ResponseContent back again to a concrete C# type using Json.Net
+}
+
+-------------------------------------
+
