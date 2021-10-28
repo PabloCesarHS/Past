@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinServiceP1", "WinServiceP1\WinServiceP1.csproj", "{137E431A-DA09-4AB4-96CE-6C83FB934C8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNetCoreWebAppP1", "ASPNetCoreWebAppP1\ASPNetCoreWebAppP1.csproj", "{0C537D6F-776C-4B3F-B6FA-347E95D74066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNetWebAppP1", "ASPNetWebAppP1\ASPNetWebAppP1.csproj", "{B70AAC08-9B95-4293-ABB1-CBA9B264F63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppP1", "ConsoleAppP1\ConsoleAppP1.csproj", "{BA2C3EC5-3892-4182-83C1-2C23E4BB1173}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppV2", "ConsoleAppV2\ConsoleAppV2.csproj", "{3C0FF4BA-7D79-4897-A910-22FC03E13D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFPruebasBus", "WFPruebasBus\WFPruebasBus.csproj", "{45FE2CDE-F96D-45C4-BB53-EA242CEFC400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{137E431A-DA09-4AB4-96CE-6C83FB934C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137E431A-DA09-4AB4-96CE-6C83FB934C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137E431A-DA09-4AB4-96CE-6C83FB934C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137E431A-DA09-4AB4-96CE-6C83FB934C8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C537D6F-776C-4B3F-B6FA-347E95D74066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C537D6F-776C-4B3F-B6FA-347E95D74066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C537D6F-776C-4B3F-B6FA-347E95D74066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C537D6F-776C-4B3F-B6FA-347E95D74066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70AAC08-9B95-4293-ABB1-CBA9B264F63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70AAC08-9B95-4293-ABB1-CBA9B264F63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70AAC08-9B95-4293-ABB1-CBA9B264F63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70AAC08-9B95-4293-ABB1-CBA9B264F63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2C3EC5-3892-4182-83C1-2C23E4BB1173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2C3EC5-3892-4182-83C1-2C23E4BB1173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2C3EC5-3892-4182-83C1-2C23E4BB1173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2C3EC5-3892-4182-83C1-2C23E4BB1173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0FF4BA-7D79-4897-A910-22FC03E13D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0FF4BA-7D79-4897-A910-22FC03E13D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0FF4BA-7D79-4897-A910-22FC03E13D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0FF4BA-7D79-4897-A910-22FC03E13D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FE2CDE-F96D-45C4-BB53-EA242CEFC400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FE2CDE-F96D-45C4-BB53-EA242CEFC400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FE2CDE-F96D-45C4-BB53-EA242CEFC400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FE2CDE-F96D-45C4-BB53-EA242CEFC400}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA625FB5-0E97-4390-A8BF-979368C32FDC}
+	EndGlobalSection
+EndGlobal

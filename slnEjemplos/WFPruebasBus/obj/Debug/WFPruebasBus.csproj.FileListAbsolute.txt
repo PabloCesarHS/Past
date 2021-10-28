@@ -1,0 +1,15 @@
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\WFPruebasBus.exe.config
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\WFPruebasBus.exe
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\WFPruebasBus.pdb
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\EPPlus.dll
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\EPPlus.xml
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.csproj.AssemblyReference.cache
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.frmPrincipal.resources
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.Properties.Resources.resources
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.csproj.GenerateResource.cache
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.csproj.CoreCompileInputs.cache
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.exe
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.pdb
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Davo\source\repos\slnEjemplos\WFPruebasBus\obj\Debug\WFPruebasBus.csproj.CopyComplete
