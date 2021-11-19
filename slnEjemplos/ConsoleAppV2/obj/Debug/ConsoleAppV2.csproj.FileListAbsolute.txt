@@ -1,9 +1,0 @@
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\obj\Debug\ConsoleAppV2.csproj.AssemblyReference.cache
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\obj\Debug\ConsoleAppV2.csproj.CoreCompileInputs.cache
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\bin\Debug\ConsoleAppV2.exe.config
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\bin\Debug\ConsoleAppV2.exe
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\bin\Debug\ConsoleAppV2.pdb
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\obj\Debug\ConsoleAppV2.exe
-C:\Users\Davo\source\repos\slnEjemplos\ConsoleAppV2\obj\Debug\ConsoleAppV2.pdb

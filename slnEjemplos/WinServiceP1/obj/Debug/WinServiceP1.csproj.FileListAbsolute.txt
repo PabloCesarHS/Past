@@ -1,8 +1,0 @@
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\bin\Debug\WinServiceP1.exe
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\bin\Debug\WinServiceP1.pdb
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\obj\Debug\WinServiceP1.csproj.AssemblyReference.cache
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\obj\Debug\WinServiceP1.Service1.resources
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\obj\Debug\WinServiceP1.csproj.GenerateResource.cache
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\obj\Debug\WinServiceP1.csproj.CoreCompileInputs.cache
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\obj\Debug\WinServiceP1.exe
-C:\Users\Davo\source\repos\slnEjemplos\WinServiceP1\obj\Debug\WinServiceP1.pdb
