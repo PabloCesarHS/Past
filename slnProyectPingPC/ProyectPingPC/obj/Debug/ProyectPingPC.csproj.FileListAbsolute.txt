@@ -1,9 +1,0 @@
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\bin\Debug\ProyectPingPC.exe
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\bin\Debug\ProyectPingPC.pdb
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.csproj.AssemblyReference.cache
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.frmListaPing.resources
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.Properties.Resources.resources
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.csproj.GenerateResource.cache
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.csproj.CoreCompileInputs.cache
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.exe
-C:\Users\Davo\source\repos\slnProyectPingPC\ProyectPingPC\obj\Debug\ProyectPingPC.pdb
