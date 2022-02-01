@@ -1,0 +1,132 @@
+SELECT  Codigo_Barra ,
+        CVD.Cod_Articulo ,
+        CVD.Des_Articulo ,
+        AAS.Cod_UnidadMed ,
+        AAS.Cod_Cuenta ,
+        AAS.Cod_Familia ,        
+		--ENERO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=1 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_ENERO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=1 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_ENERO,
+		--FEBRERO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=2 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_FEBRERO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=2 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_FEBRERO,
+		--MARZO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=3 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_MARZO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=3 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_MARZO,
+		--ABRIL
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=4 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_ABRIL,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=4 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_ABRIL,
+		--MAYO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=5 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_MAYO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=5 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_MAYO,
+		--JUNIO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=6 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_JUNIO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=6 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_JUNIO,
+		--JULIO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=7 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_JULIO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=7 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_JULIO,
+		--AGOSTO
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=8 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_AGOSTO,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=8 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_AGOSTO,
+		--SEPTIEMBRE
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=9 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_SEPTIEMBRE,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=9 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_SEPTIEMBRE,
+		--OCTUBRE
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=10 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_OCTUBRE,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=10 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_OCTUBRE,
+		--NOVIEMBRE
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=11 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_NOVIEMBRE,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=11 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_NOVIEMBRE,
+		--DICIEMBRE
+		SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=12 THEN CVD.Cantidad
+                ELSE 0
+        END) AS NC_DICIEMBRE,
+        SUM (CASE
+                WHEN MONTH(CV.Fecha_Venta)=12 THEN CVD.SubTotal
+                ELSE 0
+        END) AS TC_DICIEMBRE
+
+FROM    dbo.TAV_Articulo_Servicio AAS
+        JOIN ( dbo.TV_Comprobante_Venta_Det CVD
+               JOIN dbo.TV_Comprobante_Venta CV ON CVD.Cod_Tipo_Doc = CV.Cod_Tipo_Doc
+                                                   AND CVD.Nro_Serie = CV.Nro_Serie
+                                                   AND CV.Nro_Comprobante = CVD.Nro_Comprobante
+             ) ON AAS.Cod_Articulo = CVD.Cod_Articulo
+WHERE   YEAR(CV.Fecha_Venta) = 2020
+        AND AAS.Cod_Cuenta='BIMBO'
+        AND CV.Flag_Anulado = 'NO'
+        AND CV.Cod_Tipo_Doc NOT IN ( 'VIA')
+GROUP BY Codigo_Barra ,
+        CVD.Cod_Articulo ,
+        CVD.Des_Articulo ,
+        AAS.Cod_UnidadMed ,
+        AAS.Cod_Cuenta ,
+        AAS.Cod_Familia
+ORDER BY CVD.Des_Articulo
